@@ -18,10 +18,8 @@ class MyTabBarController: UITabBarController {
         super.viewDidLoad()
         let tabbar = UITabBar.appearance()
         tabbar.tintColor = UIColor(red: 245 / 255.0, green: 90 / 255.0, blue: 93 / 255.0, alpha: 1.0)
-        
         //添加子控制器
         addChildViewControllers()
-        
     }
     ///添加子控制器
     func addChildViewControllers() {
