@@ -22,7 +22,7 @@ class MyTabBarController: UITabBarController {
         addChildViewControllers()
     }
     ///添加子控制器
-    func addChildViewControllers() {
+    private func addChildViewControllers() {
         setChildViewController(HomeViewController(), title: "首页", imageName: "home_tabbar_32x32_", selectImageName: "home_tabbar_press_32x32_")
         setChildViewController(VideoViewController(), title: "西瓜视频", imageName: "video_tabbar_32x32_", selectImageName: "video_tabbar_press_32x32_")
         setChildViewController(RedPackageViewController(), title: "", imageName: "redpackage_tabbar_32x32_", selectImageName: "redpackage_tabbar_press_32x32_")
@@ -31,7 +31,7 @@ class MyTabBarController: UITabBarController {
         setChildViewController(HuoshanViewController(), title: "小视频", imageName: "huoshan_tabbar_32x32_", selectImageName: "huoshan_tabbar_press_32x32_")
     }
     ///初始化子控制器
-    func setChildViewController(_ childController: UIViewController,title: String,imageName: String,selectImageName: String) {
+    private func setChildViewController(_ childController: UIViewController,title: String,imageName: String,selectImageName: String) {
         childController.tabBarItem.image = UIImage(named: imageName)
         childController.tabBarItem.selectedImage = UIImage(named: selectImageName)
         childController.tabBarItem.title = title
